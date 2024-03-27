@@ -15,45 +15,46 @@
     <link rel='apple-touch-icon' href='index.apple-touch-icon.png'/> <!-- Apple Touch Icon -->
 </head>
 <body>
-  <h1>sometime in June</h1>
+  <div id="topbar">
+      <h1>Sometime in June</h1>
+
+        <!-- Canvas element -->
+        <canvas id="canvas">
+            HTML5 canvas appears to be unsupported in the current browser.<br>
+            Please try updating or use a different browser.
+        </canvas>
+
+        <!-- Status display -->
+        <div id="status">
+            <div id="status-progress" style="display: none;" oncontextmenu="event.preventDefault();">
+                <div id="status-progress-inner"></div>
+            </div>
+            <div id="status-indeterminate" style="display: none;" oncontextmenu="event.preventDefault();">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div id="status-notice" class="godot" style="display: none;"></div>
+        </div>
+    </div>
 
   <!-- ROOOOOOOOM -->
-  <a href="test_game/test.html">got to test</a>
-  <!-- <a href="paint/paint.html">Go to painting</a> -->
   <container id="furniture">
     <img src="WakingUp1.png" id="bed" width='20%'height='15%'>
-    <img src="Dresser.png" id='dresser' width='12%' height='12%'>
+    <a href="volleyballpong/volleyballpong.html" id='ball'><img src="beach_ball.png"  width='100%'></a>
+    <a href="test_game/test.html" id='clock'><img src="clock.png"  width='100%'></a>
+    <img src="plain_Dresser.png" id='dresser' width='12%' height='12%'>
     <img src="Desk.png" id="desk" width='20%'height='20%'>
-    <img src="Picture Frame.png" id="frame" width='15%'height='15%'>
+    <a href="paint/paint.html"  id="frame"><img src="Picture Frame.png"width='100%'></a>
    <!--  <img src="Bedroom Background.png" id="bg" width='100%'> -->
   </container>
+
   <div id="floor"></div>
-
-
-    <!-- Content Section -->
-    <!-- Canvas element -->
-    <canvas id="canvas">
-        HTML5 canvas appears to be unsupported in the current browser.<br>
-        Please try updating or use a different browser.
-    </canvas>
-
-    <!-- Status display -->
-    <div id="status">
-        <div id="status-progress" style="display: none;" oncontextmenu="event.preventDefault();">
-            <div id="status-progress-inner"></div>
-        </div>
-        <div id="status-indeterminate" style="display: none;" oncontextmenu="event.preventDefault();">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-        <div id="status-notice" class="godot" style="display: none;"></div>
-    </div>
 
     <!-- Scripts -->
     <script src="index.js"></script>
@@ -65,7 +66,6 @@
         // Other JavaScript code
         // Add your JavaScript code here
     </script>
-
     
 </body>
 </html>
@@ -74,38 +74,27 @@
         /* CSS styles go here */
         body {
         Background: #634969;
+        margin: 0;
+        height: 100vh;
+        /*border-style: dashed;
+        border-color: red;*/
+        overflow: hidden;
         }
         #furniture{
-           /* display: grid; 
- 
-            grid-template-columns: 1fr 1fr 1fr 1fr; 
-            grid-template-rows: 1fr 1fr 1fr; 
-            gap: 0px 0px; 
-            grid-template-areas: 
-            ". . . ."
-               ". . . ."
-            ". . . ."; 
-            border-style: solid;
-            border-color: red;*/
             width: 100%;
             display: flex;
             flex-direction: row;
-            justify-content: center;
-            margin: auto;
-           
+            justify-content: space-between;
+            margin: auto
         }
         #bed {
-           padding-top: 22.75%;
-           padding-left: 0%;
-           padding-right: 14%;
+           padding-top: 23%;
+           padding-left: 1%;
+           padding-right: 1%;
         }
         #dresser {
-           padding-top: 20%;
-           /*grid-column-start: 1;
-           grid-column-end: 2;
-           grid-row-start: 1;
-           grid-row-end: 2;*/
-           padding-left: 1%;
+           padding-top: 23.9%;
+           padding-left: 0%;
            padding-right: 1%;
         }
         #desk {
@@ -113,15 +102,38 @@
            padding-left: 1%;
            padding-right: 1%;
         }
-        #frame {
+       
+        #floor {
+            position: relative;
+            bottom: 33px;
+            width:100%;
+            height:200px;
+            background-color: #482e4f;
+            z-index: -1;
+        }
+        #canvas {
+            height: 0px;
+        }
+        #clock {
+            position: relative;
+            margin-top: 18.5%;
+            left: 9%;
+            width: 7%;
+
+        }
+        #ball {
+            position: relative;
+            left: 4%;
+            margin-top: 35.5%;
+            margin-left: 4%;
+            padding-right: 0%;
+            width: 7%;
+        }
+         #frame {
            padding-top: 10%;
            padding-left: 1%;
-           padding-right: 10%;
-        }
-        #floor {
-            width:100%;
-            height:100px;
-            background-color: #482e4f;
+           padding-right: 7%;
+           width: 13%
         }
         
 
