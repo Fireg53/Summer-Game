@@ -1,7 +1,34 @@
-INTSTRUCTIONS FOR APP ACADEMY STUDENTS
+# 2024 APP Hacks: Summer Game
 
-To start a new web development project, first fork this repository by clicking the Fork button in the top right corner. Name the fork something relevant to your project. 
+## Description
 
-Then, sign into gitpod using your github account. Use this repository to make a new workspace using the VSCode Browser IDE. Make sure to commit and push any changes when you are done working. 
+This is a small browser-based game developed in 24 hours by four students at Pasadena High School for the 2024 APP Academy Hackathon. The theme for the event was "Summer", and the game is set in a child's room with various summer activities. Clicking objects in the room will lead to different minigames, activities, and animations.
 
-Each time you work on your project, make a new workspace so that the preview commands work correctly. 
+## Getting Started
+
+### Dependencies
+
+* Node.js
+
+### Installing & Executing
+
+* Download repository to your local device. 
+* Unzip and navigate to the "Summer-Game" folder in your terminal.
+* run command:
+```
+npm run start
+```
+
+## Authors
+
+Contributors names
+
+Iyan Syeed-Miller
+August Drake
+Nathan Lam
+Elliot Adamczyk
+
+## Acknowledgments
+
+Initially forked from:
+* [Blank Template](https://github.com/msorret/web-development-starter-code)
