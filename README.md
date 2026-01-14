@@ -12,21 +12,22 @@ This is a small browser-based game developed in 24 hours by four students at Pas
 
 ### Installing & Executing
 
-* Download repository to your local device. 
+* Download the repository to your local device. 
 * Unzip and navigate to the "Summer-Game" folder in your terminal.
 * run command:
 ```
 npm run start
 ```
+* Naviate to [http://localhost:3001/index.html](http://localhost:3001/index.html)
 
 ## Authors
 
 Contributors names
 
-Iyan Syeed-Miller
-August Drake
-Nathan Lam
-Elliot Adamczyk
+* Iyan Syeed-Miller
+* August Drake
+* Nathan Lam
+* Elliot Adamczyk
 
 ## Acknowledgments
 
